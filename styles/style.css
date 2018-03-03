@@ -6,57 +6,26 @@ body {
   color: #333;
 }
 
-
-
-
-p {
-  margin-bottom: 1.7em;
+.menu-btn span{
+   width: 30px;
+   height: 5px;
+   display: block;
+   margin-top: .2em;
+   background: #333;
+   cursor: pointer;
 }
-
-
-
-/* site wrapper */
-.site-wrapper {
- max-width: 1600px;
+.site-main{
+  width: 90%;
+  margin: 0 auto;
 }
-
-/* end of site wrapper */
-
-
-
-
-/* Side bar styles */
-.site-sidebar {
-  background-color: yellow;
-  min-width: 325px;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  overflow-y: auto;
-}
-
-
 .logo {
- text-align: center;
-}
+  text-align: center;
+ }
 
-.logo img {
- width: 162px;
- height: 183px; 
-}
-
-.logo h1 {
- margin: 0;
- font-size: 36pt;
- letter-spacing: 20px;
-}
-
-
-
-
+  /* Begin nav */
 .main-menu {
   background-color: rgb(255, 241, 16);
-    
+
 }
 
 .main-menu ul {
@@ -93,51 +62,104 @@ p {
   border-bottom: none;
 }
 
+/* end nav */
 
-/* end of Side bar styles */
-
-
-
-
-
+p {
+  margin-bottom: 1.7em;
+}
 
 
 
+/* site wrapper */
+.site-wrapper {
+ max-width: 1600px;
+}
 
-/* main styles */
+/* end of site wrapper */
+
+/* moved some of his code to a media query to try and make the site responsive */
+@media(min-width: 720px){
+
+  .menu-btn{
+    display: none;
+  }
+  /* Side bar styles */
+.site-sidebar {
+  background-color: yellow;
+  min-width: 325px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+
+
+ /* edit images  */
+ .logo img {
+  width: 162px;
+  height: 183px;
+ }
+
+ .logo h1 {
+  margin: 0;
+  font-size: 36pt;
+  letter-spacing: 20px;
+ }
+
+
+ /* end of Side bar styles */
+
+ /* main styles */
 .main {
-margin-left: 325px;
+  margin-left: 325px;
+  }
+
+
+  .site-main {
+    display: flex;
+    margin: 1.7em;
+  }
+
+  .sub-pages {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: -6.8em;
+    position: relative;
+    z-index: 50;
+  }
+
+  .primary-content {
+   padding: 1.7em;
+   /* width: 60%; */
+  }
+  /* .secondary-content {
+    width: 40%;
+    min-width: 350px;
+
+   }
+   */
+
+   .secondary-content img {
+    display: block;
+   }
+
+  /* end main styles */
+
+
+
+
 }
 
 
-.site-main {  
-  display: flex;
-  margin: 1.7em;
-}
-
-.sub-pages {
-  background-color: rgba(255, 255, 255, 0.8);
-  margin-top: -6.8em;
-  position: relative;
-  z-index: 50;
-}
-
-.primary-content {
- padding: 1.7em;
- width: 60%;
-}
-.secondary-content {
-  width: 40%;
-  min-width: 350px;
-  
- }
 
 
- .secondary-content img {
-  display: block;  
- }
 
-/* end main styles */
+
+
+
+
+
+
 
 
 
@@ -388,5 +410,3 @@ img {
 
 .slick-slide {
   height: inherit; }
-
-
